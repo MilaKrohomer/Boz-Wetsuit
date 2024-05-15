@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOZ Wetsuits</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/Style.CSS">
+</head>
+<body>
+
+<!-- NAVBAR   -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary Navbar">
+  <div class="container d-flex justify-content-between">
+    <a href="Index.HTML">
+      <div class="LogoHoverNav"></div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+      	<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Productos_Index.HTML" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCTOS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Productos_Index.HTML">HOMBRE</a></li>
+            <li><a class="dropdown-item" href="Productos_Index.HTML">MUJER</a></li>
+            <li><a class="dropdown-item" href="Productos_Index.HTML">NIÑOS / ACESSORIOS</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="TeamRiders_Index.HTML">TEAM RIDERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="SobreNosotros_Index.HTML">SOBRE NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="Contacto_Index.HTML">CONTACTO</a>
+        </li>
+        <div id="LoginButton" type="button" class="nav-item btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">
+        	<a href="">LOGIN</a>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Inicia sesión con tu cuenta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-outline-primary w-100 mb-3">
+          <img src="Media/Google.png" alt="Google" class="logo">
+          Inicia sesión con tu Google
+        </button>
+        <button type="button" class="btn btn-outline-primary w-100 mb-3">
+          <img src="Media/Facebook.png" alt="Facebook" class="logo">
+          Inicia sesión con Facebook
+        </button>
+        <button type="button" class="btn btn-outline-primary w-100 mb-3">
+          <img src="Media/Apple.png" alt="Apple" class="logo">
+          Inicia sesión con Apple
+        </button>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="correo@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="Contraseña">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">Recuérdame</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Iniciar sesión</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION01 -->
+<section class="container-fluid d-flex justify-content-center vh-100 Hero overflow-hidden">
+  <div class="row MainBoxHero">
+    <div class="col-12 col-md-8 col-xl-8 p-0">
+      <img class="LogoHero" src="Media/Logo Hero.png">
+      <h1>Descubre moda y equipamiento de calidad y únete a una 
+      comunidad apasionada por el mar y las olas. ¡Vive cada día con la energía del surf junto a BOZ!</h1>
+      <a class="HeroButton" href="SobreNosotros_Index.HTML">LOGIN</a>
+    </div>
+    <div class="col-12 col-md-4 col-xl-4 p-0">
+      <img  class="WetsuitHero" src="Media/Photo Hero.png">
+    </div>      
+  </div>
+</section>
+
+<!-- CAROUSEL -->
+<section id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Media/Carrousel Home.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Media/Carrousel Home 02.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</section>
+
+<!-- SECTION PRODUCTOS -->
+<section class="container-fluid d-flex justify-content-center h-auto BackgroundProductos">
+  <div class="row MainBoxProductos justify-content-center">
+    <div class="col-12 col-md-4 col-xl-4 p-3 ">
+      <div class="colProductos">
+        <a class="HoverProductos" href="Productos_Index.HTML#Florencio">
+          <img class="ImgProductos" src="Media/Hombre.png">
+        </a>  
+      </div>
+    </div> 
+    <div class="col-12 col-md-4 col-xl-4 p-3 ">
+      <div class="colProductos">
+        <a class="HoverProductos" href="Productos_Index.HTML#Rigoberta">
+          <img class="ImgProductos" src="Media/Niños.png">
+        </a>
+      </div>
+    </div>   
+    <div class="col-12 col-md-4 col-xl-4 p-3 ">
+      <div class="colProductos">
+        <a class="HoverProductos" href="Productos_Index.HTML#Francisca">
+          <img class="ImgProductos" src="Media/Mujer.png">
+        </a>  
+      </div>
+    </div> 
+    <div class="col-xs-12 col-md-6 col-xl-6 p-0 text-center">
+      <a class="ProductosButton" href="Productos_Index.HTML">VER TODO</a>
+    </div>        
+  </div>
+</section>
+
+<!-- SECTION VIDEO -->
+<section class="BGImageVideo">
+  <div class="MainBoxVideo">
+    <video controls class="responsive-video">
+      <source src="Media/Video Promo.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  </div>
+</section>
+
+<!-- SECTION VALORES -->
+<section class="container-fluid BackgroundValores">
+  <div class="row MainBoxValores">
+    <div class="col-6 col-md-3 col-xl-3 p-0 colValores">
+      <img class="ImgValores" src="Media/Hecho a mano.png">
+      <h2>WETSUITS HECHOS A MANO</h2>
+    </div> 
+    <div class="col-6 col-md-3 col-xl-3 p-0 colValores">
+      <img class="ImgValores" src="Media/Ecológico.png">
+      <h2>NEOPRENOS ECOLÓGICOS</h2>
+    </div>   
+    <div class="col-6 col-md-3 col-xl-3 p-0 colValores">
+      <img class="ImgValores" src="Media/Garantia.png">
+      <h2>GARANTÍA DE POR VIDA</h2>
+    </div> 
+    <div class="col-6 col-md-3 col-xl-3 p-0 colValores">
+      <img class="ImgValores" src="Media/Reparacion.png">
+      <h2>SERVICIO DE REPARACIÓN</h2>
+    </div>        
+  </div>
+</section>
+
+<!-- SECTION TEAM RIDERS -->
+<section class="container-fluid d-flex justify-content-center h-auto TeamRiders">
+  <div class="row MainBoxTR">
+    <div class="col-12 col-md-7 col-xl-7 p-0">
+      <h3>TEAM RIDERS</h3>
+    </div>
+    <div class="col-12 col-md-1 col-xl-1 p-0 TextTR"></div> 
+    <div class="col-12 col-md-4 col-xl-4 p-0 TextTR">
+      <h2>Descubre  las historias detrás de nuestros
+      apasionados surfistes y buceadores,
+      quienes comparten su pasión por el mar y
+      nuestros wetsuits.</h2>
+      <a class="TRButton" href="TeamRiders_Index.HTML">CONOCE MÁS</a>
+      </div>
+    </div>      
+  </div>
+</section>
+
+<!-- SECTION VISITANOS -->
+<section class="container-fluid BackgroundVisitanos">
+  <div class="row MainBoxVisitanos">
+    <div class="col-12 col-md-7 col-xl-7 p-0 colVisitanos VisitanosLetra">
+      <h3>VISITANOS</h3>
+      <h2>Nuestras tiendas están repletas de innovación y 
+      rendimiento, listas para llevarte a nuevas alturas en 
+      cada sesión en el agua. ¡Ven y experimenta la diferencia 
+      Boz en persona! Visítanos hoy y equípate para tus 
+      aventuras acuáticas. </h2>
+      <div class="LocationBox">
+        <div class="BoxImgVisitanos">
+          <img class="ImgVisitanos" src="Media/Ubi.png"> 
+        </div>
+        <div class="LocationBoxText">
+          <h2>Ollantaytambo 172 - Chorrillos
+          Lima 15067, Perú</h2>
+        </div>
+      </div>
+      <div class="LocationBox">
+        <div class="BoxImgVisitanos">
+          <img class="ImgVisitanos" src="Media/Ubi.png">
+        </div>
+        <div class="LocationBoxText">
+          <h2>Juan Fanning 557 - Miraflores
+          Miraflores 15074, Perú</h2>
+        </div>
+      </div>
+    </div> 
+    <div class="col-12 col-md-1 col-xl-1 p-0 TextTR"></div> 
+    <div class="col-12 col-md-4 col-xl-4 p-0 colVisitanos GanasDeMorir">
+      <img class="ImgVisitanosMap" src="Media/Mapa.png">
+      <a class="VisitanosButton" href="Contacto_Index.HTML">CONOCE MÁS</a>
+    </div>   
+    </div>        
+  </div>
+</section>
+
+<!-- SECTION NOTICIAS, 
+a este punto solo me quiero pegar un tiro -->
+<section class="container-fluid d-flex justify-content-center h-auto BackgroundNoticias">
+  <div class="row MainBoxNoticias justify-content-center NoticiasLetra">
+    <h3>NOTICIAS</h3>  
+    <div class="col-12 col-md-12 col-xl-6 p-3 ">
+      <div class="card" style="">
+        <a href="Noticia01_Index.HTML">
+          <img src="Media/Noticia 01.png" class="card-img-top imgFilter" alt="...">
+        </a>  
+        <div class="card-body">
+          <h2>CONOCE LOS ORIGENES
+          DEL SURF</h2>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nam auctor euismod nisi, ac
+          blandit metus ornare quis. Nulla ac vestibulum 
+          arcu, et commodo odio. Phasellus eu justo a 
+          purus malesuada aliquam quis ut ante.</p>
+        </div>
+      </div>
+    </div> 
+    <div class="col-12 col-md-12 col-xl-6 p-3 ">
+      <div class="card" style="">
+        <a href="Noticia02_Index.HTML">
+          <img src="Media/Noticia 02.png" class="card-img-top imgFilter" alt="...">
+        </a>  
+        <div class="card-body">
+          <h2>¿QUIÉN ES 
+          SOFÍA MULÁNOVICH?</h2>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nam auctor euismod nisi, ac
+          blandit metus ornare quis. Nulla ac vestibulum 
+          arcu, et commodo odio. Phasellus eu justo a 
+          purus malesuada aliquam quis ut ante.</p>
+        </div>
+      </div>
+    </div>  
+    <div class="col-xs-12 col-md-6 col-xl-6 p-0 BoxButtonNoticias text-center">
+      <a class="NoticiasButton" href="TeamRiders_Index.HTML#Amancio">CONOCE MÁS</a>
+    </div>        
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social-icon">
+    <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/Bozwetsuits/?locale=es_LA" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/i/flow/login?redirect_after_login=%2Fwetsuitsboz" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/wetsuitsboz/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a></li>
+  </ul>
+  <ul class="menu">
+    <li class="menu__item FooterLetra"><a class="menu__link" href="Index.HTML">HOME</a></li>
+    <li class="menu__item FooterLetra"><a class="menu__link" href="Productos_Index.HTML">PRODUCTOS</a></li>
+    <li class="menu__item FooterLetra"><a class="menu__link" href="TeamRiders_Index.HTML">TEAM RIDERS</a></li>
+    <li class="menu__item FooterLetra"><a class="menu__link" href="SobreNosotros_Index.HTML">SOBRE NOSOTROS</a></li>
+    <li class="menu__item FooterLetra"><a class="menu__link" href="Contacto_Index.HTML">CONTACTO</a></li>
+  </ul>
+  <p>&copy;2024 Mila Krohomer | All Rights Reserved</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
